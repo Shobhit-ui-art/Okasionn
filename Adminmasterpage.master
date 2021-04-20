@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Adminmasterpage.master.cs" Inherits="Adminmasterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Okasionnnnnn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="keywords" content="Okasion,Event management,Wedding planner,Corporate event planner">
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="resources/css/Custome.css" rel="stylesheet">
+<link href="css/chocolat.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- web-fonts -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="header-w3left">
+				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  +012-333-4444</p>
+			</div>
+			<div class="header-w3right">
+				<ul>
+					<li><a href="mailto:okasion.eventplanner2021@gmail.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> okasion.eventplanner2021@gmail.com</a></li>
+					<li>|</li>
+					<li><a class="scroll" href="#contact">Contact</a></li>
+                    <li>
+                        <asp:Button ID="logout" runat="server" Text="Logout" OnClick="logout_Click" /></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+        <br />
+	<!-- //header -->
+        
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">   </asp:ContentPlaceHolder>
+ 
+    </div>
+    </form>
+    <footer class ="footer-pos">
+            <div class="container">
+                <p class ="pull-right"><a href="#">xBack to top</a></p>
+                <p>2021&copy;Okasion.in &middot; <a href ="index.html">Home</a>&middot;<a href="#">About</a>&middot;</a><a href="#">Contacts</a>&middot;</a></p>
+            </div>
+     </footer>
+</body>
+</html>
